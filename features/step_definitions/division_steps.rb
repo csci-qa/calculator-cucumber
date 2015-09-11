@@ -26,3 +26,11 @@ Then /^the quotient is that number$/ do
   expect(@quotient).to eq 10
 end
 
+When /^I divide zero by a number$/ do
+  @quotient = Calculator.new.divide 0, 35
+end
+
+Then /^the quotient is zero$/ do
+  expect(@quotient).to eq 0
+end
+

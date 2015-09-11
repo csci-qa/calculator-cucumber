@@ -15,4 +15,8 @@ Feature: Division
     When I divide a number by one
     Then the quotient is that number
     
+  Scenario: Dividing zero by a number
+    When I divide zero by a number
+    Then the quotient is zero
+    
   
