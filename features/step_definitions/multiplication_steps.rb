@@ -34,3 +34,7 @@ Then /^the product is zero$/ do
   expect(@product).to eq 0
 end
 
+When /^I multiply more than two numbers$/ do
+  @product = Calculator.new.multiply 5, 5, 2, 1
+end
+

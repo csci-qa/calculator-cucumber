@@ -19,4 +19,8 @@ Feature: Multiplication
     When I multiply a number by zero
     Then the product is zero
     
+  Scenario: Multiplying more than two numbers
+    When I multiply more than two numbers
+    Then I get the product
+    
   
