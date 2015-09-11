@@ -26,3 +26,11 @@ Then /^I get that number$/ do
   expect(@product).to eq 7
 end
 
+When /^I multiply a number by zero$/ do
+  @product = Calculator.new.multiply 7, 0
+end
+
+Then /^the product is zero$/ do
+  expect(@product).to eq 0
+end
+

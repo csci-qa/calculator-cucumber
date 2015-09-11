@@ -15,4 +15,8 @@ Feature: Multiplication
     When I multiply a number by one
     Then I get that number
     
+  Scenario: Multiplying a number by zero
+    When I multiply a number by zero
+    Then the product is zero
+    
   
