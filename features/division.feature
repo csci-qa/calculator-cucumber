@@ -23,4 +23,8 @@ Feature: Division
     When I divide a number by zero
     Then I recieve an error
     
+  Scenario: Dividing more than two numbers
+    When I divide more than two numbers
+    Then I get the quotient
+    
   

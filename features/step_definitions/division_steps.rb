@@ -41,3 +41,6 @@ Then /^I recieve an error$/ do
   expect{Calculator.new.divide 35, 0}.to raise_error(ZeroDivisionError)
 end
 
+When /^I divide more than two numbers$/ do
+  @quotient = Calculator.new.divide 720, 8, 9, 2
+end
