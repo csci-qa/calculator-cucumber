@@ -15,4 +15,8 @@ Feature: Subtraction
     When I subtract zero from a number
     Then the difference is that number
     
+  Scenario: Subtracting a number from itself
+    When I subtract a number from itself
+    Then the difference is zero
+    
   

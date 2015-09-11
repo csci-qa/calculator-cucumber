@@ -26,3 +26,11 @@ Then /^the difference is that number$/ do
   expect(@difference).to eq 9
 end
 
+When /^I subtract a number from itself$/ do
+  @difference = Calculator.new.subtract 5, 5
+end
+
+Then /^the difference is zero$/ do
+  expect(@difference).to eq 0
+end
+
