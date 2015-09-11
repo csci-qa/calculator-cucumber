@@ -1,10 +1,20 @@
 require 'calculator'
 
 When /^I subtract two numbers$/ do
-  @sum = Calculator.new.subtract 20, 9
+  @difference = Calculator.new.subtract 20, 9
 end
 
 Then /^I get the difference$/ do
-  expect(@sum).to eq 11
+  expect(@difference).to eq 11
+end
+
+When /^I subtract the same numbers in different orders$/ do
+  calc = Calculator.new
+  @difference1 = calc.subtract 6, 23
+  @difference2 = calc.subtract 23, 6
+end
+
+Then /^the differences are different$/ do
+  expect(@difference1).not_to eq @difference2
 end
 
