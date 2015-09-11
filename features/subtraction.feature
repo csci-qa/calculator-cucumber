@@ -11,4 +11,8 @@ Feature: Subtraction
     When I subtract the same numbers in different orders
     Then the differences are different
     
+  Scenario: Subtracting zero
+    When I subtract zero from a number
+    Then the difference is that number
+    
   

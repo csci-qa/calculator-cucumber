@@ -18,3 +18,11 @@ Then /^the differences are different$/ do
   expect(@difference1).not_to eq @difference2
 end
 
+When /^I subtract zero from a number$/ do
+  @difference = Calculator.new.subtract 9, 0
+end
+
+Then /^the difference is that number$/ do
+  expect(@difference).to eq 9
+end
+
