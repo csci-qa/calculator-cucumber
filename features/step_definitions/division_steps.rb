@@ -18,3 +18,11 @@ Then /^the quotients are different$/ do
   expect(@quotient1).not_to eq @quotient2
 end
 
+When /^I divide a number by one$/ do
+  @quotient = Calculator.new.divide 10, 1
+end
+
+Then /^the quotient is that number$/ do
+  expect(@quotient).to eq 10
+end
+
