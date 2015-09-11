@@ -11,4 +11,8 @@ Feature: Multiplication
     When I multiply the same numbers in different orders
     Then the products are the same
     
+  Scenario: Multiplying a number by one
+    When I multiply a number by one
+    Then I get that number
+    
   

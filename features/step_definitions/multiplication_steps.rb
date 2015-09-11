@@ -18,3 +18,11 @@ Then /^the products are the same$/ do
   expect(@product1).to eq @product2
 end
 
+When /^I multiply a number by one$/ do
+  @product = Calculator.new.multiply 7, 1
+end
+
+Then /^I get that number$/ do
+  expect(@product).to eq 7
+end
+
