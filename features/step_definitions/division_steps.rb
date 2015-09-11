@@ -34,3 +34,10 @@ Then /^the quotient is zero$/ do
   expect(@quotient).to eq 0
 end
 
+When /^I divide a number by zero$/ do
+end
+
+Then /^I recieve an error$/ do
+  expect{Calculator.new.divide 35, 0}.to raise_error(ZeroDivisionError)
+end
+

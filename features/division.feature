@@ -19,4 +19,8 @@ Feature: Division
     When I divide zero by a number
     Then the quotient is zero
     
+  Scenario: Dividing a number by zero
+    When I divide a number by zero
+    Then I recieve an error
+    
   
