@@ -7,4 +7,8 @@ Feature: Division
     When I divide two numbers
     Then I get the quotient
     
+  Scenario: Dividing numbers in different orders
+    When I divide the same numbers in different orders
+    Then the quotients are different
+    
   
