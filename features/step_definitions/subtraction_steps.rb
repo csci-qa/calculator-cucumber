@@ -1,11 +1,11 @@
 require 'calculator'
 
 When /^I subtract two numbers$/ do
-  @difference = Calculator.new.subtract 20, 9
+  @difference = Calculator.new.subtract 20, 19
 end
 
 Then /^I get the difference$/ do
-  expect(@difference).to eq 11
+  expect(@difference).to eq 1
 end
 
 When /^I subtract the same numbers in different orders$/ do
@@ -32,5 +32,9 @@ end
 
 Then /^the difference is zero$/ do
   expect(@difference).to eq 0
+end
+
+When /^I subtract more than two numbers$/ do
+  @difference = Calculator.new.subtract 15, 5, 8, 1
 end
 
