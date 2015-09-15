@@ -15,3 +15,6 @@ Feature: Division
     When I divide a number by one
     Then the quotient should be the number
 
+  Scenario: Dividing a zero by an integer
+    When I divide a zero by an integer
+    Then the quotient is zero
