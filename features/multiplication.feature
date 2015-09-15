@@ -19,3 +19,6 @@ Feature: Multiplication
     When I multiply an integer by zero
     Then the product should be zero
 
+  Scenario: Multiplying more than two numbers
+    When I multiply more than two numbers
+    Then I get the product

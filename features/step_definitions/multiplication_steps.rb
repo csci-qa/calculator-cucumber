@@ -34,4 +34,10 @@ Then /^the product should be zero$/ do
   expect(@product).to eq 0
 end
 
+When /^I multiply more than two numbers$/ do
+  @product = Calculator.new.multiply 5, 2, 3, 6
+end
 
+Then /^I get the product$/ do
+  expect(@product).to eq 180
+end
