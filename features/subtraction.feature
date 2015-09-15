@@ -15,3 +15,7 @@ Feature: Subtraction
     When I subtract zero from a number
     Then the difference is the first integer
 
+  Scenario: Subtrating an integer from itself
+    When I subtract an integer from itself
+    Then the difference is zero
+

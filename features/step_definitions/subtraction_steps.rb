@@ -26,4 +26,10 @@ Then /^the difference is the first integer$/ do
   expect(@difference).to eq 10
 end
 
+When /^I subtract an integer from itself$/ do
+  @difference = Calculator.new.subtract 10, 10
+end
 
+Then /^the difference is zero$/ do
+  expect(@difference).to eq 0
+end
