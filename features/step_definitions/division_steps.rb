@@ -35,10 +35,15 @@ Then /^the quotient is zero$/ do
 end
 
 When /^I divide a number by zero$/ do
+  begin
+    Calculator.new.divide 35, 0
+  rescue ZeroDivisionError
+    @quotient = "error"
+  end
 end
 
 Then /^I recieve an error$/ do
-  expect{Calculator.new.divide 35, 0}.to raise_error(ZeroDivisionError)
+  expect(@quotient).to eq "error"
 end
 
 When /^I divide more than two numbers$/ do
