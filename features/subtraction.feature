@@ -7,4 +7,7 @@ Feature: Subtraction
     When I subtract two numbers
     Then I get the difference
   
+  Scenario: Subtracting numbers in different orders
+    When I subtract the same numbers in different order
+    Then the differences are not the same
 
