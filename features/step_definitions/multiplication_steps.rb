@@ -18,4 +18,12 @@ Then /^the products are the same$/ do
   expect(@product1).to eq @product2
 end
 
+When /^I multiply an integer by one$/ do
+  @product = Calculator.new.multiply 5, 1
+end
+
+Then /^the product should be the integer other than one$/ do
+  expect(@product).to eq 5
+end
+
 

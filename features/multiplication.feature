@@ -11,3 +11,6 @@ Feature: Multiplication
     When I multiply numbers in different order
     Then the products are the same
 
+  Scenario: Multipying an integer by one
+    When I multiply an integer by one
+    Then the product should be the integer other than one
