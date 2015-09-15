@@ -17,3 +17,13 @@ end
 Then /^the differences are not the same$/ do
   expect(@difference1).to_not eq @difference2
 end
+
+When /^I subtract zero from a number$/ do
+  @difference = Calculator.new.subtract 10, 0
+end
+
+Then /^the difference is the first integer$/ do
+  expect(@difference).to eq 10
+end
+
+

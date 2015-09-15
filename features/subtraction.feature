@@ -11,3 +11,7 @@ Feature: Subtraction
     When I subtract the same numbers in different order
     Then the differences are not the same
 
+  Scenario: Subtracting zero
+    When I subtract zero from a number
+    Then the difference is the first integer
+
