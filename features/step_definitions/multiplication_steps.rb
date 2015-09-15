@@ -26,4 +26,12 @@ Then /^the product should be the integer other than one$/ do
   expect(@product).to eq 5
 end
 
+When /^I multiply an integer by zero$/ do
+  @product = Calculator.new.multiply 5, 0
+end
+
+Then /^the product should be zero$/ do
+  expect(@product).to eq 0
+end
+
 

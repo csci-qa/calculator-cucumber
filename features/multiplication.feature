@@ -14,3 +14,8 @@ Feature: Multiplication
   Scenario: Multipying an integer by one
     When I multiply an integer by one
     Then the product should be the integer other than one
+
+  Scenario: Multiplying an integer by zero
+    When I multiply an integer by zero
+    Then the product should be zero
+
