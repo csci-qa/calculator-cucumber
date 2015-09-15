@@ -11,3 +11,7 @@ Feature: Division
     When I divide the same numbers in different orders
     Then the quotients are not the same
 
+  Scenario: Dividing a number by one
+    When I divide a number by one
+    Then the quotient should be the number
+
