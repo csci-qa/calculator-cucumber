@@ -42,3 +42,8 @@ end
 Then /^it should raise an error$/ do
   expect { @quotient.call }.to raise_error(ZeroDivisionError)
 end
+ 
+When /^I divide more than two numbers$/ do
+  @quotient = Calculator.new.divide 50, 5, 2
+end
+
