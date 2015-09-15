@@ -8,3 +8,14 @@ Then /^I get an integer$/ do
   expect(@product).to eq 10
 end
 
+When /^I multiply numbers in different order$/ do
+  calc = Calculator.new
+  @product1 = calc.multiply 2, 5
+  @product2 = calc.multiply 5, 2
+end
+
+Then /^the products are the same$/ do
+  expect(@product1).to eq @product2
+end
+
+

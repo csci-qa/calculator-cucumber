@@ -7,3 +7,7 @@ Feature: Multiplication
     When I multiply two numbers
     Then I get an integer
 
+  Scenario: Multiplying numbers in different order
+    When I multiply numbers in different order
+    Then the products are the same
+
