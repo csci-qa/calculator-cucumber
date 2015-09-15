@@ -33,3 +33,9 @@ end
 Then /^the difference is zero$/ do
   expect(@difference).to eq 0
 end
+
+When /^I subtract more than two numbers$/ do
+  @difference = Calculator.new.subtract 10, 0, 2, 3
+end
+
+

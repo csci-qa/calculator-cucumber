@@ -19,3 +19,7 @@ Feature: Subtraction
     When I subtract an integer from itself
     Then the difference is zero
 
+  Scenario: Subtracting more than two numbers
+    When I subtract more than two numbers
+    Then I get the difference
+
