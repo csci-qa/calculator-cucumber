@@ -18,3 +18,9 @@ Feature: Division
   Scenario: Dividing a zero by an integer
     When I divide a zero by an integer
     Then the quotient is zero
+
+  Scenario: Dividing an integer by zero
+    When I divide any integer by a zero
+    Then it should raise an error
+
+

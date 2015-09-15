@@ -35,3 +35,10 @@ Then /^the quotient is zero$/ do
   expect(@quotient).to eq 0
 end
 
+When /^I divide any integer by a zero$/ do
+  @quotient = lambda { Calculator.new.divide 5, 0 }
+end
+
+Then /^it should raise an error$/ do
+  expect { @quotient.call }.to raise_error(ZeroDivisionError)
+end
