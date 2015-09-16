@@ -37,13 +37,13 @@ end
 When /^I divide a number by zero$/ do
   begin
     Calculator.new.divide 35, 0
-  rescue ZeroDivisionError
-    @quotient = "error"
+  rescue ZeroDivisionError => ZeroDivisionError
+    @quotient = ZeroDivisionError
   end
 end
 
 Then /^I recieve an error$/ do
-  expect(@quotient).to eq "error"
+  expect(@quotient).to eq ZeroDivisionError
 end
 
 When /^I divide more than two numbers$/ do
