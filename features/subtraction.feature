@@ -21,7 +21,7 @@ Feature: Subtraction
 
   Scenario: Subtracting an integer from itself
     When I subtract a number from itself
-    Then I get zero
+    Then the difference is zero
 
 
 

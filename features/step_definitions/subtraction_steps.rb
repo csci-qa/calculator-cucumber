@@ -39,6 +39,6 @@ When /^I subtract a number from itself$/ do
 	@diff = Calculator.new.subtract 8,8
 end
 
-Then /^I get zero$/ do
+Then /^the difference is zero$/ do
 	expect(@diff).to eq 0
 end
