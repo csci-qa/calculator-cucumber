@@ -12,19 +12,7 @@ When /^I divide a number by zero$/ do
 	begin
 	Calculator.new.divide 4,0
 	rescue Exception => e
-		#throw ZeroDivisionError
 	end
-	#begin
-		
-	#rescue Exception => e
-	#	@quotient = e.to_s
-	#end
-
-	#begin
-	#	expect{Calculator.new.divide 4,0}.to raise_exception{ZeroDivisionError}
-	#rescue Exception => e
-		#raise ZeroDivisionError.new($!)
-	#end
 end
 
 Then /^I receive an error$/ do
