@@ -16,8 +16,8 @@ class Calculator
   def divide (*numbers)
   	begin
   	  numbers.inject(:/)
-  	rescue 
-  		raise ZeroDivisionError.new($!)
+  	rescue ZeroDivisionError => e
+  		raise ZeroDivisionError
   	 end
   end
 
