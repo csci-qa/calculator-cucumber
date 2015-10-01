@@ -1,5 +1,7 @@
 require 'calculator'
 
+
+
 When /^I add two numbers$/ do
   @sum = Calculator.new.add 6, 23
 end
@@ -29,3 +31,12 @@ end
 When /^I add more than two numbers$/ do
   @sum = Calculator.new.add 15, 6, 8, 0
 end
+
+
+
+
+
+
+
+
+
