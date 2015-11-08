@@ -1,5 +1,13 @@
 require 'calculator'
 
+When /^I add two integers$/ do
+	@sum = Calculator.new.add 2, 3
+end
+
+Then /^the sum is an integer$/ do
+	expect(@sum).to be_a Integer
+end
+
 When /^I add two numbers$/ do
   @sum = Calculator.new.add 6, 23
 end
