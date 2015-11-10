@@ -11,8 +11,16 @@ class Calculator
 	numbers.inject(:*)
   end
   
-  def division *numbers
+  def divide *numbers
     numbers.inject(:/)
   end
-  
+ 
+  def div_check(x, y)	  
+	x.div y
+	rescue ZeroDivisionError
+	  true
+	else
+	  false
+	end
+	 
 end
