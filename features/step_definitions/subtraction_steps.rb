@@ -15,11 +15,13 @@ Then /^the result is that number$/ do
 end
 
 When /^I subtract the same numbers in different orders$/ do
-	@result = Calculator.new.sub 5, 10
+	@result1 = Calculator.new.sub 5, 10
+	@result2 = Calculator.new.sub 10, 5
 end
 
 Then /^I get a different result$/ do
-	expect(@result).to eq -5
+	expect(@result1).to eq -5
+	expect(@result2).to eq 5
 end
 
 When /^I subtract more than two numbers$/ do
