@@ -1,11 +1,10 @@
 Feature: Division
-  As a mathmatician
   I want my calculator to divide numbers
   So I can know their quotient
  
 	Scenario: Dividing an number by its least common denominator returns an integer
-	When I divide an number by its least common denominator
-    Then the quotient is an integer
+		When I divide an number by its least common denominator
+		Then the quotient is an integer
 
 	Scenario: Dividing numbers in different orders
 		When I divide the same numbers in different orders

@@ -1,11 +1,10 @@
 Feature: Multiplication
-  As a mathmatician
   I want my calculator to multiply numbers
   So I can know their product
  
-  Scenario: Multiplying two integers to get an integer
-    When I multiply two integers
-    Then the product is an integer
+    Scenario: Multiplying two integers to get an integer
+		When I multiply two integers
+		Then the product is an integer
 
 	Scenario: Multiplying numbers in different orders
 		When I multiply the same numbers in different orders

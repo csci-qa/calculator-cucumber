@@ -1,11 +1,10 @@
 Feature: Subtraction
-  As a mathmatican
   I want my calculator to subtract numbers
   So I can know their difference
  
-   Scenario: Subtracting two integers to get an integer
-    When I subtract two integers
-    Then the difference is an integer
+    Scenario: Subtracting two integers to get an integer
+		When I subtract two integers
+		Then the difference is an integer
 
 	Scenario: Subtracting numbers in different orders
 		When I subtract the same numbers in different orders
