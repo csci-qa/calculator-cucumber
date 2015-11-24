@@ -2,7 +2,7 @@
   def add *numbers
     numbers.inject(:+)
   end
-  def add *n
+    def add *n
     sum = n.inject(:+)
 		return sum
 	end
