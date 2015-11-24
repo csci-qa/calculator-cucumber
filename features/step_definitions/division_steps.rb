@@ -42,7 +42,7 @@ Then /^I get an error$/ do
 end
 
 When /^I divide more than two numbers$/ do
-	@quotient = Calculator.new.divide 256, 64, 32, 16
+	@quotient = Calculator.new.divide 256, 32, 8 
 end
 
 Then /^I get the quotient$/ do
