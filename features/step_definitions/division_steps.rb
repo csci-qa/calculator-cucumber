@@ -46,5 +46,5 @@ When /^I divide more than two numbers$/ do
 end
 
 Then /^I get the quotient$/ do
-	expect(@quotient)
+	expect(@quotient).to eq 1
 end 
