@@ -18,3 +18,5 @@ Feature: Addition
   Scenario: Adding more than two numbers
     When I add more than two numbers
     Then I get the sum
+
+	
