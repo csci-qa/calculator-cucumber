@@ -13,8 +13,9 @@ Feature: Addition
 
   Scenario: Adding numbers in different orders
     When I add the same numbers in different orders
-    Then the sums are the same
+    Then The sums are the same
 
   Scenario: Adding more than two numbers
     When I add more than two numbers
     Then I get the sum
+
