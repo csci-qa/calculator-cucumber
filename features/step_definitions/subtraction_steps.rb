@@ -31,6 +31,6 @@ When(/^I subtract a number from itself$/) do
   @diff = Calculator.new.minus 10,10
 end
 
-Then(/^the difference is (\d+)$/) do |arg1|
+Then(/^the difference is zero$/) do
   expect(@diff).to eq 0
 end

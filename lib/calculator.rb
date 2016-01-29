@@ -6,4 +6,8 @@ class Calculator
   def minus *numbers
 	numbers.inject(:-)
   end
+  
+  def mult *numbers
+	numbers.inject(:*)
+  end
 end

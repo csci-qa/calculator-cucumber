@@ -11,10 +11,10 @@ Feature: Subtraction
 		When I subtract the same numbers in different orders
 		Then the sums are different
 		
-	Scenario: Subtracting 0
+	Scenario: Subtracting zero
 		When I subtract zero from a number
 		Then the difference is the first number
 		
 	Scenario: Subtracting a number from itself
 		When I subtract a number from itself
-		Then the difference is 0
+		Then the difference is zero
