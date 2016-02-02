@@ -7,4 +7,12 @@ class Calculator
 	def subtract *numbers
     numbers.inject(:-)
 	end
+	
+	def multiplication *numbers
+	numbers.inject(:*)
+	end
+	
+	def division *numbers
+	numbers.inject(:/)
+	end
 end
