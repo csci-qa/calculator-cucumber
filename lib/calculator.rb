@@ -10,4 +10,8 @@ class Calculator
   def mult *numbers
 	numbers.inject(:*)
   end
+  
+  def divd *numbers
+	numbers.inject(:/)
+  end
 end
