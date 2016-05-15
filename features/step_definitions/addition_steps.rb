@@ -22,10 +22,14 @@ When /^I add the same numbers in different orders$/ do
   @sum2 = calc.add 23, 6
 end
 
-Then /^the sums are the same$/ do
+Then /^The sums are the same$/ do
   expect(@sum1).to eq @sum2
 end
 
 When /^I add more than two numbers$/ do
   @sum = Calculator.new.add 15, 6, 8, 0
+end
+
+Then /^Then I get the sum$/ do
+	expect(@sum).to eq 29
 end
