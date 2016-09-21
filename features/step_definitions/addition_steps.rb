@@ -29,3 +29,26 @@ end
 When /^I add more than two numbers$/ do
   @sum = Calculator.new.add 15, 6, 8, 0
 end
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
