@@ -13,7 +13,7 @@ Feature: Division
 
   Scenario: Dividing by zero
     When I divide a number by zero
-    Then there is an error
+    Then I get a ZeroDivisionError which equals zero
 
 Scenario: Dividing zero by a number
 	When I divide zero by a number

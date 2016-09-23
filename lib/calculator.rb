@@ -5,6 +5,8 @@ class Calculator
   
   def divide *numbers
   	numbers.inject(:/)
+  	rescue ZeroDivisionError
+  	0
   	end
   	
   def subtract *numbers

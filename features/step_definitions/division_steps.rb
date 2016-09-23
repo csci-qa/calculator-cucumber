@@ -23,8 +23,8 @@ When /^I divide a number by zero$/ do
   @quotient = Calculator.new.divide 10, 0
 end
 
-Then /^there is an error$/ do
-	expect(@quotient).to raise_error("divided by 0", ZeroDivisionError)
+Then /^I get a ZeroDivisionError which equals zero$/ do
+	expect(@quotient).to eq 0
 end
 
 When /^I divide zero by a number$/ do
