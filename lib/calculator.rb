@@ -13,5 +13,7 @@ class Calculator
   
   def divide *numbers
 	numbers.inject(:/)
+	rescue ZeroDivisionError
+		0.0
   end
 end
