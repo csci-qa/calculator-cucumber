@@ -9,11 +9,15 @@ Feature: Division
 	
 	Scenario: Dividing numbers by zero
 	When I divide a number by zero
-	Then the calculator has an error
+	Then there is an error
 	
 	Scenario: Dividing numbers in different orders
 	When I divide the same numbers in different orders
 	Then the quotient is different
+	
+	Scenario: Dividing zero by a number
+	When I divide zero by a number
+	Then the quotient is zero
 	
 	Scenario: Dividing by one
 	When I divide a number by one

@@ -1,5 +1,5 @@
 class Calculator
-	def add *numbers
+	def sum *numbers
 		numbers.inject(:+)
 	end
 	def divide *numbers

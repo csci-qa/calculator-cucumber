@@ -18,4 +18,3 @@ Feature: Subtraction
 	Scenario: Subtracting zero by a number
 		When I subtract zero by a number
 		Then my second number stays the same
-		

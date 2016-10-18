@@ -13,9 +13,8 @@ Feature: Multiplication
 	
 	Scenario: Multiplying a number by one
 	When I multiply a number by one
-	Then the product is the same as the number
+	Then the products are the same
 	
 	Scenario: Multiplying numbers in different orders
 	When I multiply the same numbers in different orders
-	Then the products are the same
-	
+	Then the higher number becomes the product
