@@ -4,7 +4,7 @@ Feature: Multiplication
   So I can know their product
 
   Scenario: Multiplying numbers to get a product
-    When I add two numbers
+    When I multiply two numbers
     Then I get the product
 
   Scenario: Multiply a number by zero
@@ -15,6 +15,3 @@ Feature: Multiplication
     When I multiply the same numbers in different orders
     Then the products are the same
 
-  Scenario: Multiplying more than two numbers
-    When I multiply more than two numbers
-    Then I get the product

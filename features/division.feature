@@ -9,12 +9,9 @@ Feature: Division
 
   Scenario: Dividing by zero
     When I divide a number by zero
-    Then
+    Then I get an ZeroDivisionError, so it equals 0
 
   Scenario: Dividing numbers in different orders
     When I divide by the same numbers in different orders
     Then the quotients are not the same
 
-  Scenario: Dividing by more than two numbers
-    When I divide by more than two numbers
-    Then I get the quotient
