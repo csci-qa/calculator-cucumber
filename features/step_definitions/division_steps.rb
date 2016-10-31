@@ -20,7 +20,7 @@ When /^I divide zero by a number$/ do
   @quotient = Calculator.new.divide 0, 6
 end
 
-Then /^the quotient will be zero$/ do
+Then /^it will raise an error$/ do
   expect(@quotient).to eq 0
 end
 
