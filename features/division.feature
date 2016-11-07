@@ -8,8 +8,7 @@ Feature: Division
     Then I get the quotient
 
   Scenario: Dividing by zero
-    When I divide a number by zero
-    Then I get an ZeroDivisionError, so it equals 0
+    When I divide a number by zero it should fail with "ZeroDivisionError"
 
   Scenario: Dividing numbers in different orders
     When I divide by the same numbers in different orders
